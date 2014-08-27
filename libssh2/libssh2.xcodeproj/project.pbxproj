@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA137C00198DB8C700D0F23A /* agent.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BE9198DB8C700D0F23A /* agent.c */; };
+		FA137C01198DB8C700D0F23A /* channel.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BEA198DB8C700D0F23A /* channel.c */; };
+		FA137C02198DB8C700D0F23A /* comp.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BEB198DB8C700D0F23A /* comp.c */; };
+		FA137C03198DB8C700D0F23A /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BEC198DB8C700D0F23A /* crypt.c */; };
+		FA137C04198DB8C700D0F23A /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BED198DB8C700D0F23A /* global.c */; };
+		FA137C05198DB8C700D0F23A /* hostkey.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BEE198DB8C700D0F23A /* hostkey.c */; };
+		FA137C06198DB8C700D0F23A /* keepalive.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BEF198DB8C700D0F23A /* keepalive.c */; };
+		FA137C07198DB8C700D0F23A /* kex.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF0198DB8C700D0F23A /* kex.c */; };
+		FA137C08198DB8C700D0F23A /* knownhost.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF1198DB8C700D0F23A /* knownhost.c */; };
+		FA137C09198DB8C700D0F23A /* libgcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF2198DB8C700D0F23A /* libgcrypt.c */; };
+		FA137C0A198DB8C700D0F23A /* mac.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF3198DB8C700D0F23A /* mac.c */; };
+		FA137C0B198DB8C700D0F23A /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF4198DB8C700D0F23A /* misc.c */; };
+		FA137C0C198DB8C700D0F23A /* openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF5198DB8C700D0F23A /* openssl.c */; };
+		FA137C0D198DB8C700D0F23A /* packet.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF6198DB8C700D0F23A /* packet.c */; };
+		FA137C0E198DB8C700D0F23A /* pem.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF7198DB8C700D0F23A /* pem.c */; };
+		FA137C0F198DB8C700D0F23A /* publickey.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF8198DB8C700D0F23A /* publickey.c */; };
+		FA137C10198DB8C700D0F23A /* scp.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BF9198DB8C700D0F23A /* scp.c */; };
+		FA137C11198DB8C700D0F23A /* session.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BFA198DB8C700D0F23A /* session.c */; };
+		FA137C12198DB8C700D0F23A /* sftp.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BFB198DB8C700D0F23A /* sftp.c */; };
+		FA137C13198DB8C700D0F23A /* transport.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BFC198DB8C700D0F23A /* transport.c */; };
+		FA137C14198DB8C700D0F23A /* userauth.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BFD198DB8C700D0F23A /* userauth.c */; };
+		FA137C15198DB8C700D0F23A /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BFE198DB8C700D0F23A /* version.c */; };
+		FA137C16198DB8C700D0F23A /* wincng.c in Sources */ = {isa = PBXBuildFile; fileRef = FA137BFF198DB8C700D0F23A /* wincng.c */; };
+		FA137C3A198DB98D00D0F23A /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = FA137C37198DB98D00D0F23A /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA137C3B198DB98D00D0F23A /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = FA137C38198DB98D00D0F23A /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA137C3C198DB98D00D0F23A /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = FA137C39198DB98D00D0F23A /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA137BE2198DB83800D0F23A /* liblibssh2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibssh2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA137BE9198DB8C700D0F23A /* agent.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = agent.c; path = ./src/agent.c; sourceTree = "<group>"; };
+		FA137BEA198DB8C700D0F23A /* channel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = channel.c; path = ./src/channel.c; sourceTree = "<group>"; };
+		FA137BEB198DB8C700D0F23A /* comp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = comp.c; path = ./src/comp.c; sourceTree = "<group>"; };
+		FA137BEC198DB8C700D0F23A /* crypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = crypt.c; path = ./src/crypt.c; sourceTree = "<group>"; };
+		FA137BED198DB8C700D0F23A /* global.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = global.c; path = ./src/global.c; sourceTree = "<group>"; };
+		FA137BEE198DB8C700D0F23A /* hostkey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hostkey.c; path = ./src/hostkey.c; sourceTree = "<group>"; };
+		FA137BEF198DB8C700D0F23A /* keepalive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = keepalive.c; path = ./src/keepalive.c; sourceTree = "<group>"; };
+		FA137BF0198DB8C700D0F23A /* kex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = kex.c; path = ./src/kex.c; sourceTree = "<group>"; };
+		FA137BF1198DB8C700D0F23A /* knownhost.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = knownhost.c; path = ./src/knownhost.c; sourceTree = "<group>"; };
+		FA137BF2198DB8C700D0F23A /* libgcrypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = libgcrypt.c; path = ./src/libgcrypt.c; sourceTree = "<group>"; };
+		FA137BF3198DB8C700D0F23A /* mac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mac.c; path = ./src/mac.c; sourceTree = "<group>"; };
+		FA137BF4198DB8C700D0F23A /* misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = misc.c; path = ./src/misc.c; sourceTree = "<group>"; };
+		FA137BF5198DB8C700D0F23A /* openssl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = openssl.c; path = ./src/openssl.c; sourceTree = "<group>"; };
+		FA137BF6198DB8C700D0F23A /* packet.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = packet.c; path = ./src/packet.c; sourceTree = "<group>"; };
+		FA137BF7198DB8C700D0F23A /* pem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pem.c; path = ./src/pem.c; sourceTree = "<group>"; };
+		FA137BF8198DB8C700D0F23A /* publickey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = publickey.c; path = ./src/publickey.c; sourceTree = "<group>"; };
+		FA137BF9198DB8C700D0F23A /* scp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = scp.c; path = ./src/scp.c; sourceTree = "<group>"; };
+		FA137BFA198DB8C700D0F23A /* session.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = session.c; path = ./src/session.c; sourceTree = "<group>"; };
+		FA137BFB198DB8C700D0F23A /* sftp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sftp.c; path = ./src/sftp.c; sourceTree = "<group>"; };
+		FA137BFC198DB8C700D0F23A /* transport.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = transport.c; path = ./src/transport.c; sourceTree = "<group>"; };
+		FA137BFD198DB8C700D0F23A /* userauth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = userauth.c; path = ./src/userauth.c; sourceTree = "<group>"; };
+		FA137BFE198DB8C700D0F23A /* version.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = version.c; path = ./src/version.c; sourceTree = "<group>"; };
+		FA137BFF198DB8C700D0F23A /* wincng.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wincng.c; path = ./src/wincng.c; sourceTree = "<group>"; };
+		FA137C19198DB93700D0F23A /* channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = channel.h; path = ./include/channel.h; sourceTree = "<group>"; };
+		FA137C1A198DB93700D0F23A /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comp.h; path = ./include/comp.h; sourceTree = "<group>"; };
+		FA137C1B198DB93700D0F23A /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = ./include/crypto.h; sourceTree = "<group>"; };
+		FA137C1C198DB93700D0F23A /* libgcrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libgcrypt.h; path = ./include/libgcrypt.h; sourceTree = "<group>"; };
+		FA137C1D198DB93700D0F23A /* libssh2_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libssh2_config.h; path = ./include/libssh2_config.h; sourceTree = "<group>"; };
+		FA137C1E198DB93700D0F23A /* libssh2_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libssh2_priv.h; path = ./include/libssh2_priv.h; sourceTree = "<group>"; };
+		FA137C1F198DB93700D0F23A /* mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mac.h; path = ./include/mac.h; sourceTree = "<group>"; };
+		FA137C20198DB93700D0F23A /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = misc.h; path = ./include/misc.h; sourceTree = "<group>"; };
+		FA137C21198DB93700D0F23A /* openssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openssl.h; path = ./include/openssl.h; sourceTree = "<group>"; };
+		FA137C22198DB93700D0F23A /* packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = packet.h; path = ./include/packet.h; sourceTree = "<group>"; };
+		FA137C23198DB93700D0F23A /* session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = session.h; path = ./include/session.h; sourceTree = "<group>"; };
+		FA137C24198DB93700D0F23A /* sftp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sftp.h; path = ./include/sftp.h; sourceTree = "<group>"; };
+		FA137C25198DB93700D0F23A /* transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transport.h; path = ./include/transport.h; sourceTree = "<group>"; };
+		FA137C26198DB93700D0F23A /* userauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = userauth.h; path = ./include/userauth.h; sourceTree = "<group>"; };
+		FA137C27198DB93700D0F23A /* wincng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wincng.h; path = ./include/wincng.h; sourceTree = "<group>"; };
+		FA137C37198DB98D00D0F23A /* libssh2_publickey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = ./include/libssh2_publickey.h; sourceTree = "<group>"; };
+		FA137C38198DB98D00D0F23A /* libssh2_sftp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = ./include/libssh2_sftp.h; sourceTree = "<group>"; };
+		FA137C39198DB98D00D0F23A /* libssh2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = ./include/libssh2.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA137BDF198DB83800D0F23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA137BD9198DB83800D0F23A = {
+			isa = PBXGroup;
+			children = (
+				FA137BE9198DB8C700D0F23A /* agent.c */,
+				FA137BEA198DB8C700D0F23A /* channel.c */,
+				FA137BEB198DB8C700D0F23A /* comp.c */,
+				FA137BEC198DB8C700D0F23A /* crypt.c */,
+				FA137BED198DB8C700D0F23A /* global.c */,
+				FA137BEE198DB8C700D0F23A /* hostkey.c */,
+				FA137BEF198DB8C700D0F23A /* keepalive.c */,
+				FA137BF0198DB8C700D0F23A /* kex.c */,
+				FA137BF1198DB8C700D0F23A /* knownhost.c */,
+				FA137BF2198DB8C700D0F23A /* libgcrypt.c */,
+				FA137BF3198DB8C700D0F23A /* mac.c */,
+				FA137BF4198DB8C700D0F23A /* misc.c */,
+				FA137C19198DB93700D0F23A /* channel.h */,
+				FA137C1A198DB93700D0F23A /* comp.h */,
+				FA137C1B198DB93700D0F23A /* crypto.h */,
+				FA137C1C198DB93700D0F23A /* libgcrypt.h */,
+				FA137C1D198DB93700D0F23A /* libssh2_config.h */,
+				FA137C1E198DB93700D0F23A /* libssh2_priv.h */,
+				FA137C37198DB98D00D0F23A /* libssh2_publickey.h */,
+				FA137C38198DB98D00D0F23A /* libssh2_sftp.h */,
+				FA137C39198DB98D00D0F23A /* libssh2.h */,
+				FA137C1F198DB93700D0F23A /* mac.h */,
+				FA137C20198DB93700D0F23A /* misc.h */,
+				FA137C21198DB93700D0F23A /* openssl.h */,
+				FA137C22198DB93700D0F23A /* packet.h */,
+				FA137C23198DB93700D0F23A /* session.h */,
+				FA137C24198DB93700D0F23A /* sftp.h */,
+				FA137C25198DB93700D0F23A /* transport.h */,
+				FA137C26198DB93700D0F23A /* userauth.h */,
+				FA137C27198DB93700D0F23A /* wincng.h */,
+				FA137BF5198DB8C700D0F23A /* openssl.c */,
+				FA137BF6198DB8C700D0F23A /* packet.c */,
+				FA137BF7198DB8C700D0F23A /* pem.c */,
+				FA137BF8198DB8C700D0F23A /* publickey.c */,
+				FA137BF9198DB8C700D0F23A /* scp.c */,
+				FA137BFA198DB8C700D0F23A /* session.c */,
+				FA137BFB198DB8C700D0F23A /* sftp.c */,
+				FA137BFC198DB8C700D0F23A /* transport.c */,
+				FA137BFD198DB8C700D0F23A /* userauth.c */,
+				FA137BFE198DB8C700D0F23A /* version.c */,
+				FA137BFF198DB8C700D0F23A /* wincng.c */,
+				FA137BE3198DB83800D0F23A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA137BE3198DB83800D0F23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA137BE2198DB83800D0F23A /* liblibssh2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA137BE0198DB83800D0F23A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA137C3A198DB98D00D0F23A /* libssh2_publickey.h in Headers */,
+				FA137C3B198DB98D00D0F23A /* libssh2_sftp.h in Headers */,
+				FA137C3C198DB98D00D0F23A /* libssh2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA137BE1198DB83800D0F23A /* libssh2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA137BE6198DB83800D0F23A /* Build configuration list for PBXNativeTarget "libssh2" */;
+			buildPhases = (
+				FA137BDE198DB83800D0F23A /* Sources */,
+				FA137BDF198DB83800D0F23A /* Frameworks */,
+				FA137BE0198DB83800D0F23A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libssh2;
+			productName = libssh2;
+			productReference = FA137BE2198DB83800D0F23A /* liblibssh2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA137BDA198DB83800D0F23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Inferior Human Organs, Inc";
+			};
+			buildConfigurationList = FA137BDD198DB83800D0F23A /* Build configuration list for PBXProject "libssh2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA137BD9198DB83800D0F23A;
+			productRefGroup = FA137BE3198DB83800D0F23A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA137BE1198DB83800D0F23A /* libssh2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA137BDE198DB83800D0F23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA137C00198DB8C700D0F23A /* agent.c in Sources */,
+				FA137C01198DB8C700D0F23A /* channel.c in Sources */,
+				FA137C02198DB8C700D0F23A /* comp.c in Sources */,
+				FA137C03198DB8C700D0F23A /* crypt.c in Sources */,
+				FA137C04198DB8C700D0F23A /* global.c in Sources */,
+				FA137C05198DB8C700D0F23A /* hostkey.c in Sources */,
+				FA137C06198DB8C700D0F23A /* keepalive.c in Sources */,
+				FA137C07198DB8C700D0F23A /* kex.c in Sources */,
+				FA137C08198DB8C700D0F23A /* knownhost.c in Sources */,
+				FA137C09198DB8C700D0F23A /* libgcrypt.c in Sources */,
+				FA137C0A198DB8C700D0F23A /* mac.c in Sources */,
+				FA137C0B198DB8C700D0F23A /* misc.c in Sources */,
+				FA137C0C198DB8C700D0F23A /* openssl.c in Sources */,
+				FA137C0D198DB8C700D0F23A /* packet.c in Sources */,
+				FA137C0E198DB8C700D0F23A /* pem.c in Sources */,
+				FA137C0F198DB8C700D0F23A /* publickey.c in Sources */,
+				FA137C10198DB8C700D0F23A /* scp.c in Sources */,
+				FA137C11198DB8C700D0F23A /* session.c in Sources */,
+				FA137C12198DB8C700D0F23A /* sftp.c in Sources */,
+				FA137C13198DB8C700D0F23A /* transport.c in Sources */,
+				FA137C14198DB8C700D0F23A /* userauth.c in Sources */,
+				FA137C15198DB8C700D0F23A /* version.c in Sources */,
+				FA137C16198DB8C700D0F23A /* wincng.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA137BE4198DB83800D0F23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA137BE5198DB83800D0F23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA137BE7198DB83800D0F23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = libssh2;
+				SDKROOT = macosx10.9;
+			};
+			name = Debug;
+		};
+		FA137BE8198DB83800D0F23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = libssh2;
+				SDKROOT = macosx10.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA137BDD198DB83800D0F23A /* Build configuration list for PBXProject "libssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA137BE4198DB83800D0F23A /* Debug */,
+				FA137BE5198DB83800D0F23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA137BE6198DB83800D0F23A /* Build configuration list for PBXNativeTarget "libssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA137BE7198DB83800D0F23A /* Debug */,
+				FA137BE8198DB83800D0F23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA137BDA198DB83800D0F23A /* Project object */;
+}

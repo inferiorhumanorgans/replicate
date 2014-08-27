@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA03F5DF198DBC830026E284 /* liblibssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03F5DE198DBC660026E284 /* liblibssh2.a */; };
+		FA03F5E5198DBE470026E284 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03F5E4198DBE470026E284 /* libcrypto.dylib */; };
+		FA03F5E7198DBE590026E284 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03F5E6198DBE590026E284 /* libz.dylib */; };
+		FA03F5EB198DC2AA0026E284 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03F5EA198DC2AA0026E284 /* Security.framework */; };
+		FA03F5EE198DCC130026E284 /* CCKeyManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA03F5ED198DCC130026E284 /* CCKeyManagement.m */; };
+		FA03F5F4198DCDA60026E284 /* CCFileTransferWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA03F5F2198DCDA60026E284 /* CCFileTransferWindowController.m */; };
+		FA03F5F5198DCDA60026E284 /* CCFileTransferWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA03F5F3198DCDA60026E284 /* CCFileTransferWindowController.xib */; };
+		FA137B2C198DB3AB00D0F23A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA137B2B198DB3AB00D0F23A /* Cocoa.framework */; };
+		FA137B36198DB3AB00D0F23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA137B34198DB3AB00D0F23A /* InfoPlist.strings */; };
+		FA137B38198DB3AB00D0F23A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA137B37198DB3AB00D0F23A /* main.m */; };
+		FA137B3C198DB3AB00D0F23A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA137B3A198DB3AB00D0F23A /* Credits.rtf */; };
+		FA137B3F198DB3AB00D0F23A /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA137B3E198DB3AB00D0F23A /* CCAppDelegate.m */; };
+		FA137B42198DB3AB00D0F23A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA137B40198DB3AB00D0F23A /* MainMenu.xib */; };
+		FA137B44198DB3AB00D0F23A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA137B43198DB3AB00D0F23A /* Images.xcassets */; };
+		FA137B4B198DB3AB00D0F23A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA137B4A198DB3AB00D0F23A /* XCTest.framework */; };
+		FA137B4C198DB3AB00D0F23A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA137B2B198DB3AB00D0F23A /* Cocoa.framework */; };
+		FA137B54198DB3AB00D0F23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA137B52198DB3AB00D0F23A /* InfoPlist.strings */; };
+		FA137B56198DB3AB00D0F23A /* ReplicateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA137B55198DB3AB00D0F23A /* ReplicateTests.m */; };
+		FA325515199165B70039F5F0 /* CCDirentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA325514199165B70039F5F0 /* CCDirentView.m */; };
+		FA427B08199C9B9300DB0927 /* CCS3BucketRegionOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA427B07199C9B9300DB0927 /* CCS3BucketRegionOpTests.m */; };
+		FA637650199995FF00E9B56B /* CCMainWindowControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63764F199995FF00E9B56B /* CCMainWindowControllerTests.m */; };
+		FA6376531999A31300E9B56B /* CCS3BucketListOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6376521999A31300E9B56B /* CCS3BucketListOpTests.m */; };
+		FA6B07D91993733000E201E1 /* CCS3.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6B07D81993733000E201E1 /* CCS3.m */; };
+		FA6DA27C198FFCAB0024570B /* CCSSH.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA27B198FFCAB0024570B /* CCSSH.m */; };
+		FA98157019929371001AC1F2 /* CCGenericDirectoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98156F19929371001AC1F2 /* CCGenericDirectoryController.m */; };
+		FAAC9338198E239C00166F02 /* CCSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAC9337198E239C00166F02 /* CCSheetController.m */; };
+		FAAC933B198EAE2400166F02 /* CCDirectoryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAC933A198EAE2400166F02 /* CCDirectoryEntry.m */; };
+		FAAF8FCA19956A88001DB2EF /* CCS3ObjectFetchOp.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF8FC919956A88001DB2EF /* CCS3ObjectFetchOp.m */; };
+		FAC99E0A19940C4F00970220 /* CCFileTransferBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC99E0919940C4F00970220 /* CCFileTransferBase.m */; };
+		FAC99E0D199423EB00970220 /* CCS3Semaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC99E0C199423EB00970220 /* CCS3Semaphore.m */; };
+		FAC99E10199424BF00970220 /* CCS3BlockingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC99E0F199424BF00970220 /* CCS3BlockingConnection.m */; };
+		FAC99E1319942F3F00970220 /* CCS3Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC99E1219942F3F00970220 /* CCS3Operation.m */; };
+		FAC99E1619947EF700970220 /* CCS3BucketListOp.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC99E1519947EF700970220 /* CCS3BucketListOp.m */; };
+		FAC99E1919949B6900970220 /* CCS3BucketRegionOp.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC99E1819949B6900970220 /* CCS3BucketRegionOp.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA03F5DD198DBC660026E284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA03F5D9198DBC660026E284 /* libssh2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA137BE2198DB83800D0F23A;
+			remoteInfo = libssh2;
+		};
+		FA03F5E0198DBC900026E284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA03F5D9198DBC660026E284 /* libssh2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA137BE1198DB83800D0F23A;
+			remoteInfo = libssh2;
+		};
+		FA137B4D198DB3AB00D0F23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA137B20198DB3AB00D0F23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA137B27198DB3AB00D0F23A;
+			remoteInfo = Replicate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA03F5D9198DBC660026E284 /* libssh2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libssh2.xcodeproj; path = libssh2/libssh2.xcodeproj; sourceTree = "<group>"; };
+		FA03F5E2198DBE400026E284 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		FA03F5E4198DBE470026E284 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		FA03F5E6198DBE590026E284 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FA03F5E8198DC2920026E284 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		FA03F5EA198DC2AA0026E284 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA03F5EC198DCC130026E284 /* CCKeyManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCKeyManagement.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA03F5ED198DCC130026E284 /* CCKeyManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCKeyManagement.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA03F5F1198DCDA60026E284 /* CCFileTransferWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFileTransferWindowController.h; sourceTree = "<group>"; };
+		FA03F5F2198DCDA60026E284 /* CCFileTransferWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFileTransferWindowController.m; sourceTree = "<group>"; };
+		FA03F5F3198DCDA60026E284 /* CCFileTransferWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCFileTransferWindowController.xib; sourceTree = "<group>"; };
+		FA137B28198DB3AB00D0F23A /* Replicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Replicate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA137B2B198DB3AB00D0F23A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA137B2E198DB3AB00D0F23A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA137B2F198DB3AB00D0F23A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA137B30198DB3AB00D0F23A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA137B33198DB3AB00D0F23A /* Replicate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Replicate-Info.plist"; sourceTree = "<group>"; };
+		FA137B35198DB3AB00D0F23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA137B37198DB3AB00D0F23A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA137B39198DB3AB00D0F23A /* Replicate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Replicate-Prefix.pch"; sourceTree = "<group>"; };
+		FA137B3B198DB3AB00D0F23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA137B3D198DB3AB00D0F23A /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		FA137B3E198DB3AB00D0F23A /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		FA137B41198DB3AB00D0F23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA137B43198DB3AB00D0F23A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA137B49198DB3AB00D0F23A /* ReplicateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplicateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA137B4A198DB3AB00D0F23A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA137B51198DB3AB00D0F23A /* ReplicateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReplicateTests-Info.plist"; sourceTree = "<group>"; };
+		FA137B53198DB3AB00D0F23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA137B55198DB3AB00D0F23A /* ReplicateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ReplicateTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA325513199165B70039F5F0 /* CCDirentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDirentView.h; sourceTree = "<group>"; };
+		FA325514199165B70039F5F0 /* CCDirentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDirentView.m; sourceTree = "<group>"; };
+		FA427B07199C9B9300DB0927 /* CCS3BucketRegionOpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCS3BucketRegionOpTests.m; sourceTree = "<group>"; };
+		FA63764F199995FF00E9B56B /* CCMainWindowControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainWindowControllerTests.m; sourceTree = "<group>"; };
+		FA6376521999A31300E9B56B /* CCS3BucketListOpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCS3BucketListOpTests.m; sourceTree = "<group>"; };
+		FA6B07D71993733000E201E1 /* CCS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA6B07D81993733000E201E1 /* CCS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6DA27A198FFCAB0024570B /* CCSSH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCSSH.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA6DA27B198FFCAB0024570B /* CCSSH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCSSH.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6DA27D198FFFA90024570B /* CCInterrogationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCInterrogationProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA98156E19929371001AC1F2 /* CCGenericDirectoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCGenericDirectoryController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA98156F19929371001AC1F2 /* CCGenericDirectoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCGenericDirectoryController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA9815711992948E001AC1F2 /* CCFileTransferProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCFileTransferProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAAC9336198E239C00166F02 /* CCSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSheetController.h; sourceTree = "<group>"; };
+		FAAC9337198E239C00166F02 /* CCSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSheetController.m; sourceTree = "<group>"; };
+		FAAC9339198EAE2400166F02 /* CCDirectoryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCDirectoryEntry.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAAC933A198EAE2400166F02 /* CCDirectoryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCDirectoryEntry.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAAF8FC819956A88001DB2EF /* CCS3ObjectFetchOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3ObjectFetchOp.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAAF8FC919956A88001DB2EF /* CCS3ObjectFetchOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3ObjectFetchOp.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAC99E0819940C4F00970220 /* CCFileTransferBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCFileTransferBase.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAC99E0919940C4F00970220 /* CCFileTransferBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCFileTransferBase.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAC99E0B199423EB00970220 /* CCS3Semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3Semaphore.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAC99E0C199423EB00970220 /* CCS3Semaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3Semaphore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAC99E0E199424BF00970220 /* CCS3BlockingConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3BlockingConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAC99E0F199424BF00970220 /* CCS3BlockingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3BlockingConnection.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAC99E1119942F3F00970220 /* CCS3Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3Operation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAC99E1219942F3F00970220 /* CCS3Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3Operation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAC99E1419947EF700970220 /* CCS3BucketListOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3BucketListOp.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAC99E1519947EF700970220 /* CCS3BucketListOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3BucketListOp.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FAC99E1719949B6900970220 /* CCS3BucketRegionOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCS3BucketRegionOp.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAC99E1819949B6900970220 /* CCS3BucketRegionOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCS3BucketRegionOp.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA137B25198DB3AB00D0F23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA03F5EB198DC2AA0026E284 /* Security.framework in Frameworks */,
+				FA03F5E7198DBE590026E284 /* libz.dylib in Frameworks */,
+				FA03F5E5198DBE470026E284 /* libcrypto.dylib in Frameworks */,
+				FA03F5DF198DBC830026E284 /* liblibssh2.a in Frameworks */,
+				FA137B2C198DB3AB00D0F23A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA137B46198DB3AB00D0F23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA137B4C198DB3AB00D0F23A /* Cocoa.framework in Frameworks */,
+				FA137B4B198DB3AB00D0F23A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA03F5DA198DBC660026E284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA03F5DE198DBC660026E284 /* liblibssh2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA137B1F198DB3AB00D0F23A = {
+			isa = PBXGroup;
+			children = (
+				FA137B31198DB3AB00D0F23A /* Replicate */,
+				FA137B4F198DB3AB00D0F23A /* ReplicateTests */,
+				FA137B2A198DB3AB00D0F23A /* Frameworks */,
+				FA137B29198DB3AB00D0F23A /* Products */,
+				FA03F5D9198DBC660026E284 /* libssh2.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		FA137B29198DB3AB00D0F23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B28198DB3AB00D0F23A /* Replicate.app */,
+				FA137B49198DB3AB00D0F23A /* ReplicateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA137B2A198DB3AB00D0F23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA03F5EA198DC2AA0026E284 /* Security.framework */,
+				FA03F5E8198DC2920026E284 /* Carbon.framework */,
+				FA03F5E6198DBE590026E284 /* libz.dylib */,
+				FA03F5E4198DBE470026E284 /* libcrypto.dylib */,
+				FA03F5E2198DBE400026E284 /* libssl.dylib */,
+				FA137B2B198DB3AB00D0F23A /* Cocoa.framework */,
+				FA137B4A198DB3AB00D0F23A /* XCTest.framework */,
+				FA137B2D198DB3AB00D0F23A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA137B2D198DB3AB00D0F23A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B2E198DB3AB00D0F23A /* AppKit.framework */,
+				FA137B2F198DB3AB00D0F23A /* CoreData.framework */,
+				FA137B30198DB3AB00D0F23A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA137B31198DB3AB00D0F23A /* Replicate */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B3D198DB3AB00D0F23A /* CCAppDelegate.h */,
+				FA137B3E198DB3AB00D0F23A /* CCAppDelegate.m */,
+				FA03F5F1198DCDA60026E284 /* CCFileTransferWindowController.h */,
+				FA03F5F2198DCDA60026E284 /* CCFileTransferWindowController.m */,
+				FA6DA27D198FFFA90024570B /* CCInterrogationProtocol.h */,
+				FAAC9336198E239C00166F02 /* CCSheetController.h */,
+				FAAC9337198E239C00166F02 /* CCSheetController.m */,
+				FA137B43198DB3AB00D0F23A /* Images.xcassets */,
+				FAAA545B1998056200115814 /* NIBs */,
+				FA98157F1992A0CD001AC1F2 /* BaseProtocol */,
+				FA6B07D61993731A00E201E1 /* S3 */,
+				FA98157E1992A0B6001AC1F2 /* SSH */,
+				FA137B32198DB3AB00D0F23A /* Supporting Files */,
+			);
+			path = Replicate;
+			sourceTree = "<group>";
+		};
+		FA137B32198DB3AB00D0F23A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B33198DB3AB00D0F23A /* Replicate-Info.plist */,
+				FA137B34198DB3AB00D0F23A /* InfoPlist.strings */,
+				FA137B37198DB3AB00D0F23A /* main.m */,
+				FA137B39198DB3AB00D0F23A /* Replicate-Prefix.pch */,
+				FA137B3A198DB3AB00D0F23A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA137B4F198DB3AB00D0F23A /* ReplicateTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B50198DB3AB00D0F23A /* Supporting Files */,
+				FA6376511999A2F800E9B56B /* S3 */,
+				FA137B55198DB3AB00D0F23A /* ReplicateTests.m */,
+				FA63764F199995FF00E9B56B /* CCMainWindowControllerTests.m */,
+			);
+			path = ReplicateTests;
+			sourceTree = "<group>";
+		};
+		FA137B50198DB3AB00D0F23A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B51198DB3AB00D0F23A /* ReplicateTests-Info.plist */,
+				FA137B52198DB3AB00D0F23A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA6376511999A2F800E9B56B /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6376521999A31300E9B56B /* CCS3BucketListOpTests.m */,
+				FA427B07199C9B9300DB0927 /* CCS3BucketRegionOpTests.m */,
+			);
+			name = S3;
+			sourceTree = "<group>";
+		};
+		FA6B07D61993731A00E201E1 /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B07D71993733000E201E1 /* CCS3.h */,
+				FA6B07D81993733000E201E1 /* CCS3.m */,
+				FAC99E0B199423EB00970220 /* CCS3Semaphore.h */,
+				FAC99E0C199423EB00970220 /* CCS3Semaphore.m */,
+				FAC99E0E199424BF00970220 /* CCS3BlockingConnection.h */,
+				FAC99E0F199424BF00970220 /* CCS3BlockingConnection.m */,
+				FAC99E1119942F3F00970220 /* CCS3Operation.h */,
+				FAC99E1219942F3F00970220 /* CCS3Operation.m */,
+				FAC99E1419947EF700970220 /* CCS3BucketListOp.h */,
+				FAC99E1519947EF700970220 /* CCS3BucketListOp.m */,
+				FAC99E1719949B6900970220 /* CCS3BucketRegionOp.h */,
+				FAC99E1819949B6900970220 /* CCS3BucketRegionOp.m */,
+				FAAF8FC819956A88001DB2EF /* CCS3ObjectFetchOp.h */,
+				FAAF8FC919956A88001DB2EF /* CCS3ObjectFetchOp.m */,
+			);
+			name = S3;
+			sourceTree = "<group>";
+		};
+		FA98157E1992A0B6001AC1F2 /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DA27A198FFCAB0024570B /* CCSSH.h */,
+				FA6DA27B198FFCAB0024570B /* CCSSH.m */,
+				FA03F5EC198DCC130026E284 /* CCKeyManagement.h */,
+				FA03F5ED198DCC130026E284 /* CCKeyManagement.m */,
+			);
+			name = SSH;
+			sourceTree = "<group>";
+		};
+		FA98157F1992A0CD001AC1F2 /* BaseProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				FA325513199165B70039F5F0 /* CCDirentView.h */,
+				FA325514199165B70039F5F0 /* CCDirentView.m */,
+				FAAC9339198EAE2400166F02 /* CCDirectoryEntry.h */,
+				FAAC933A198EAE2400166F02 /* CCDirectoryEntry.m */,
+				FAC99E0819940C4F00970220 /* CCFileTransferBase.h */,
+				FAC99E0919940C4F00970220 /* CCFileTransferBase.m */,
+				FA9815711992948E001AC1F2 /* CCFileTransferProtocol.h */,
+				FA98156E19929371001AC1F2 /* CCGenericDirectoryController.h */,
+				FA98156F19929371001AC1F2 /* CCGenericDirectoryController.m */,
+			);
+			name = BaseProtocol;
+			sourceTree = "<group>";
+		};
+		FAAA545B1998056200115814 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				FA137B40198DB3AB00D0F23A /* MainMenu.xib */,
+				FA03F5F3198DCDA60026E284 /* CCFileTransferWindowController.xib */,
+			);
+			name = NIBs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA137B27198DB3AB00D0F23A /* Replicate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA137B59198DB3AB00D0F23A /* Build configuration list for PBXNativeTarget "Replicate" */;
+			buildPhases = (
+				FA137B24198DB3AB00D0F23A /* Sources */,
+				FA137B25198DB3AB00D0F23A /* Frameworks */,
+				FA137B26198DB3AB00D0F23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA03F5E1198DBC900026E284 /* PBXTargetDependency */,
+			);
+			name = Replicate;
+			productName = Replicate;
+			productReference = FA137B28198DB3AB00D0F23A /* Replicate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA137B48198DB3AB00D0F23A /* ReplicateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA137B5C198DB3AB00D0F23A /* Build configuration list for PBXNativeTarget "ReplicateTests" */;
+			buildPhases = (
+				FA137B45198DB3AB00D0F23A /* Sources */,
+				FA137B46198DB3AB00D0F23A /* Frameworks */,
+				FA137B47198DB3AB00D0F23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA137B4E198DB3AB00D0F23A /* PBXTargetDependency */,
+			);
+			name = ReplicateTests;
+			productName = ReplicateTests;
+			productReference = FA137B49198DB3AB00D0F23A /* ReplicateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA137B20198DB3AB00D0F23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Inferior Human Organs, Inc";
+				TargetAttributes = {
+					FA137B48198DB3AB00D0F23A = {
+						TestTargetID = FA137B27198DB3AB00D0F23A;
+					};
+				};
+			};
+			buildConfigurationList = FA137B23198DB3AB00D0F23A /* Build configuration list for PBXProject "Replicate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA137B1F198DB3AB00D0F23A;
+			productRefGroup = FA137B29198DB3AB00D0F23A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA03F5DA198DBC660026E284 /* Products */;
+					ProjectRef = FA03F5D9198DBC660026E284 /* libssh2.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FA137B27198DB3AB00D0F23A /* Replicate */,
+				FA137B48198DB3AB00D0F23A /* ReplicateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA03F5DE198DBC660026E284 /* liblibssh2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibssh2.a;
+			remoteRef = FA03F5DD198DBC660026E284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA137B26198DB3AB00D0F23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA137B36198DB3AB00D0F23A /* InfoPlist.strings in Resources */,
+				FA137B44198DB3AB00D0F23A /* Images.xcassets in Resources */,
+				FA03F5F5198DCDA60026E284 /* CCFileTransferWindowController.xib in Resources */,
+				FA137B3C198DB3AB00D0F23A /* Credits.rtf in Resources */,
+				FA137B42198DB3AB00D0F23A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA137B47198DB3AB00D0F23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA137B54198DB3AB00D0F23A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA137B24198DB3AB00D0F23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA137B38198DB3AB00D0F23A /* main.m in Sources */,
+				FA137B3F198DB3AB00D0F23A /* CCAppDelegate.m in Sources */,
+				FAAC933B198EAE2400166F02 /* CCDirectoryEntry.m in Sources */,
+				FA325515199165B70039F5F0 /* CCDirentView.m in Sources */,
+				FAC99E0A19940C4F00970220 /* CCFileTransferBase.m in Sources */,
+				FA03F5F4198DCDA60026E284 /* CCFileTransferWindowController.m in Sources */,
+				FA98157019929371001AC1F2 /* CCGenericDirectoryController.m in Sources */,
+				FA03F5EE198DCC130026E284 /* CCKeyManagement.m in Sources */,
+				FA6B07D91993733000E201E1 /* CCS3.m in Sources */,
+				FAC99E10199424BF00970220 /* CCS3BlockingConnection.m in Sources */,
+				FAC99E1619947EF700970220 /* CCS3BucketListOp.m in Sources */,
+				FAC99E1919949B6900970220 /* CCS3BucketRegionOp.m in Sources */,
+				FAAF8FCA19956A88001DB2EF /* CCS3ObjectFetchOp.m in Sources */,
+				FAC99E1319942F3F00970220 /* CCS3Operation.m in Sources */,
+				FAC99E0D199423EB00970220 /* CCS3Semaphore.m in Sources */,
+				FAAC9338198E239C00166F02 /* CCSheetController.m in Sources */,
+				FA6DA27C198FFCAB0024570B /* CCSSH.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA137B45198DB3AB00D0F23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA427B08199C9B9300DB0927 /* CCS3BucketRegionOpTests.m in Sources */,
+				FA637650199995FF00E9B56B /* CCMainWindowControllerTests.m in Sources */,
+				FA6376531999A31300E9B56B /* CCS3BucketListOpTests.m in Sources */,
+				FA137B56198DB3AB00D0F23A /* ReplicateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA03F5E1198DBC900026E284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libssh2;
+			targetProxy = FA03F5E0198DBC900026E284 /* PBXContainerItemProxy */;
+		};
+		FA137B4E198DB3AB00D0F23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA137B27198DB3AB00D0F23A /* Replicate */;
+			targetProxy = FA137B4D198DB3AB00D0F23A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA137B34198DB3AB00D0F23A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA137B35198DB3AB00D0F23A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA137B3A198DB3AB00D0F23A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA137B3B198DB3AB00D0F23A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA137B40198DB3AB00D0F23A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA137B41198DB3AB00D0F23A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FA137B52198DB3AB00D0F23A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA137B53198DB3AB00D0F23A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA137B57198DB3AB00D0F23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA137B58198DB3AB00D0F23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA137B5A198DB3AB00D0F23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Replicate/Replicate-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(CONFIGURATION_BUILD_DIR)/**",
+					"$(CONFIGURATION_BUILD_DIR)/libssh2",
+				);
+				INFOPLIST_FILE = "Replicate/Replicate-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = Replicate;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.9;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA137B5B198DB3AB00D0F23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Replicate/Replicate-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(CONFIGURATION_BUILD_DIR)/**",
+				);
+				INFOPLIST_FILE = "Replicate/Replicate-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = Replicate;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.9;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA137B5D198DB3AB00D0F23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Replicate.app/Contents/MacOS/Replicate";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Replicate/Replicate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReplicateTests/ReplicateTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = ReplicateTests;
+				SDKROOT = macosx10.9;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA137B5E198DB3AB00D0F23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Replicate.app/Contents/MacOS/Replicate";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Replicate/Replicate-Prefix.pch";
+				INFOPLIST_FILE = "ReplicateTests/ReplicateTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = ReplicateTests;
+				SDKROOT = macosx10.9;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA137B23198DB3AB00D0F23A /* Build configuration list for PBXProject "Replicate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA137B57198DB3AB00D0F23A /* Debug */,
+				FA137B58198DB3AB00D0F23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA137B59198DB3AB00D0F23A /* Build configuration list for PBXNativeTarget "Replicate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA137B5A198DB3AB00D0F23A /* Debug */,
+				FA137B5B198DB3AB00D0F23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA137B5C198DB3AB00D0F23A /* Build configuration list for PBXNativeTarget "ReplicateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA137B5D198DB3AB00D0F23A /* Debug */,
+				FA137B5E198DB3AB00D0F23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA137B20198DB3AB00D0F23A /* Project object */;
+}
